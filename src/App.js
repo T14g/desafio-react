@@ -4,6 +4,7 @@ import Header from './components/header/header.component';
 import Info from './components/info/info.component';
 import PostGrid from './components/post-grid/post-grid.component';
 import Footer from './components/footer/footer.component';
+import Modal from './components/modal/modal.component';
 
 const App = () => {
 
@@ -16,22 +17,25 @@ const App = () => {
   };
 
   return (
-    <Container lights={lights}>
+    <React.Fragment>
+      <Container lights={lights}>
 
-      <Header lights={lights} />
+        <Header lights={lights} />
 
-      <MainTitle>
-        Criei este site <Strong>responsivo</Strong> com
-        <Strong>React</Strong> utilizando <Strong>styled-components</Strong>
-      </MainTitle>
+        <MainTitle>
+          Criei este site <Strong>responsivo</Strong> com
+          <Strong>React</Strong> utilizando <Strong>styled-components</Strong>
+        </MainTitle>
 
-      <Info>A fonte utilizada é a Open Sans!</Info>
-      <Info>A fonte utilizada é a Open Sans!</Info>
+        <Info>A fonte utilizada é a Open Sans!</Info>
+        <Info>A fonte utilizada é a Open Sans!</Info>
 
-      <PostGrid actions={actions} />
+        <PostGrid actions={actions} />
 
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
+      <Modal showModal={showModal} />
+    </React.Fragment>
   );
 }
 
