@@ -19,7 +19,20 @@ const PostGrid = ({actions}) => {
                     unde mollitia reiciendis explicabo bla
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
-                    buttonTitle="Leia mais..."
+                    buttonTitle="Scroll estranho..."
+                    callToAction={() => console.log("hello2")}
+                    
+                />
+
+                <PostItem
+                    title="Site Responsivo Desktop"
+                    content="Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Ad molestiae, 
+                    hic, quaerat dolor voluptatum aliquam
+                    unde mollitia reiciendis explicabo bla
+                    nditiis est ipsum nobis praesentium. 
+                    Id iure et quo soluta. Minima?"
+                    buttonTitle="Abrir Modal"
                     callToAction={showModal}
                 />
 
@@ -31,19 +44,7 @@ const PostGrid = ({actions}) => {
                     unde mollitia reiciendis explicabo bla
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
-                    buttonTitle="Leia mais..."
-                    callToAction={() => console.log("hello2")}
-                />
-
-                <PostItem
-                    title="Site Responsivo Desktop"
-                    content="Lorem ipsum dolor, sit amet 
-                    consectetur adipisicing elit. Ad molestiae, 
-                    hic, quaerat dolor voluptatum aliquam
-                    unde mollitia reiciendis explicabo bla
-                    nditiis est ipsum nobis praesentium. 
-                    Id iure et quo soluta. Minima?"
-                    buttonTitle="Leia mais..."
+                    buttonTitle="Turn Lights..."
                     callToAction={turnLights}
                 />
             </Row>

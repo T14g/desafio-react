@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    font-family: 'Open Sans', sans-serif;       
     background: ${props => props.lights ? '#fff' : '#000'};
     color: ${props => props.lights ? '#000' : '#fff'};
 `
