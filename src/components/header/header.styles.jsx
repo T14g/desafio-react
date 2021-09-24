@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-
+    background: ${props => props.lights ? '#fff' : '#000'}
 `
 
 export const InnerContainer = styled.div`

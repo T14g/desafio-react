@@ -1,10 +1,10 @@
 import React from 'react';
 import { MenuContainer, MenuItem } from './main-menu.styles';
 
-const MainMenu = () => {
+const MainMenu = ({ lights }) => {
 
     return (
-        <MenuContainer>
+        <MenuContainer lights={lights}>
             <MenuItem>HTML5</MenuItem>
             <MenuItem>CSS3</MenuItem>
             <MenuItem>JAVASCRIPT</MenuItem>

@@ -2,12 +2,12 @@ import React from 'react';
 import MainMenu from '../main-menu/main-menu.component';
 import { HeaderContainer, InnerContainer, LogoContainer, Logo } from './header.styles';
 
-const Header = () => {
+const Header = ({ lights }) => {
     return (
-        <HeaderContainer>
+        <HeaderContainer lights={lights}>
             <InnerContainer>
                 <Logo src='./images/logo.png' />
-                <MainMenu />
+                <MainMenu lights={lights} />
             </InnerContainer>
         </HeaderContainer>
     );

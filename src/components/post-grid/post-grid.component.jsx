@@ -1,10 +1,12 @@
 import React from 'react';
 import PostItem from '../post-item/post-item.component';
 
-import { Container } from '../../App.styles';
-import { Row } from './post-grid.styled';
+import { Row, Container } from './post-grid.styled';
 
-const PostGrid = ({ actions }) => {
+const PostGrid = ({actions}) => {
+
+    const showModal = actions['show-modal'];
+    const turnLights = actions['turn-lights'];
 
     return (
         <Container>
@@ -18,7 +20,7 @@ const PostGrid = ({ actions }) => {
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
                     buttonTitle="Leia mais..."
-                    callToAction={() => console.log("hello")}
+                    callToAction={showModal}
                 />
 
                 <PostItem
@@ -42,7 +44,7 @@ const PostGrid = ({ actions }) => {
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
                     buttonTitle="Leia mais..."
-                    callToAction={() => console.log("hello3")}
+                    callToAction={turnLights}
                 />
             </Row>
         </Container>
