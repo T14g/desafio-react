@@ -7,9 +7,8 @@ import {
     Button
 } from './modal.styles';
 
-const Modal = ({ showModal }) => {
-    console.log(showModal);
-    
+const Modal = ({ showModal, closeModal }) => {
+
     return showModal ? (
         <ModalOverlay>
             <ModalContainer>
@@ -21,7 +20,7 @@ const Modal = ({ showModal }) => {
                     t ut facere labore! Officia molestiae laudantium to
                     tam eligendi distinctio dolorum atque laboriosam.
                 </ModalContent>
-                <Button>Close</Button>
+                <Button onClick={closeModal}>Close</Button>
             </ModalContainer>
         </ModalOverlay>
     ) : null

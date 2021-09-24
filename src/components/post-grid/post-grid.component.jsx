@@ -21,7 +21,7 @@ const PostGrid = ({actions}) => {
                     Id iure et quo soluta. Minima?"
                     buttonTitle="Scroll estranho..."
                     callToAction={() => console.log("hello2")}
-                    
+                    customClass="blue"
                 />
 
                 <PostItem
@@ -34,6 +34,7 @@ const PostGrid = ({actions}) => {
                     Id iure et quo soluta. Minima?"
                     buttonTitle="Abrir Modal"
                     callToAction={showModal}
+                    customClass="yellow"
                 />
 
                 <PostItem
@@ -46,6 +47,7 @@ const PostGrid = ({actions}) => {
                     Id iure et quo soluta. Minima?"
                     buttonTitle="Turn Lights..."
                     callToAction={turnLights}
+                    customClass="purple"
                 />
             </Row>
         </Container>

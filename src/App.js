@@ -34,7 +34,7 @@ const App = () => {
 
         <Footer />
       </Container>
-      <Modal showModal={showModal} />
+      <Modal showModal={showModal} closeModal={() => setShowModal(false)} />
     </React.Fragment>
   );
 }
