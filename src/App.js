@@ -24,11 +24,11 @@ const App = () => {
 
         <MainTitle>
           Criei este site <Strong>responsivo</Strong> com
-          <Strong>React</Strong> utilizando <Strong>styled-components</Strong>
+          <Strong> React</Strong> utilizando <Strong>styled-components</Strong>
         </MainTitle>
 
-        <Info>A fonte utilizada é a Open Sans!</Info>
-        <Info>A fonte utilizada é a Open Sans!</Info>
+        <Info>Este é um componente de informação, incluindo ícone em SVG, feito com Styled-components</Info>
+        <Info>Este é outro componente de informação, incluindo ícone em SVG, também foi feito com Styled</Info>
 
         <PostGrid actions={actions} />
 

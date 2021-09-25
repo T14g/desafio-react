@@ -7,8 +7,8 @@ export const Container = styled.div`
 `
 
 export const MainTitle = styled.h1`
-    max-width: 1200px;
-    margin: 50px auto;
+    max-width: 952px;
+    margin: 80px auto;
     text-align:center;
     font-weight: 300;
     font-size: 55px;

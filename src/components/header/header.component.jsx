@@ -5,7 +5,7 @@ const Header = ({ lights }) => {
     return (
         <HeaderContainer lights={lights}>
             <InnerContainer>
-                <Logo src='./images/logo.png' />
+                <Logo src='./assets/images/logo.png' />
                 <MainMenu lights={lights} />
             </InnerContainer>
         </HeaderContainer>
