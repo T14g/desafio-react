@@ -18,10 +18,23 @@ const PostGrid = ({actions}) => {
                     hic, quaerat dolor voluptatum aliquam
                     unde mollitia reiciendis explicabo bla
                     nditiis est ipsum nobis praesentium. 
+                    Id iure et quo soluta. Minima?
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Ad molestiae, 
+                    hic, quaerat dolor voluptatum aliquam
+                    unde mollitia reiciendis explicabo bla
+                    nditiis est ipsum nobis praesentium. 
+                    Id iure et quo soluta. Minima?
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Ad molestiae, 
+                    hic, quaerat dolor voluptatum aliquam
+                    unde mollitia reiciendis explicabo bla
+                    nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
-                    buttonTitle="Scroll estranho..."
+                    buttonTitle="Read more..."
                     callToAction={() => console.log("hello2")}
                     customClass="blue"
+                    expandable={true}
                 />
 
                 <PostItem
