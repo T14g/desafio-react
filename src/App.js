@@ -11,8 +11,18 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [lights, setLights] = useState(false);
 
+  const closeModal = () => {
+    document.querySelector('body').style.overflow = 'auto';
+    setShowModal(false)
+  }
+
+  const openModal = () =>{
+    document.querySelector('body').style.overflow = 'hidden';
+    setShowModal(!showModal);
+  }
+
   const actions = {
-    'show-modal': () => setShowModal(!showModal),
+    'show-modal': () => openModal(),
     'turn-lights': () => setLights(!lights)
   };
 
@@ -34,7 +44,7 @@ const App = () => {
 
         <Footer />
       </Container>
-      <Modal showModal={showModal} closeModal={() => setShowModal(false)} />
+      <Modal showModal={showModal} closeModal={closeModal} />
     </React.Fragment>
   );
 }

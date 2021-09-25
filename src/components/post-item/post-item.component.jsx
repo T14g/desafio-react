@@ -21,9 +21,13 @@ const PostItem = ({
     const [contentHeight, setContentHeight] = useState(false);
     const excerpt = content.slice(0, 140);
 
+    const saveHeight = (height) => {
+        setContentHeight(height);
+    }
+
     useEffect(() => {
         let postContentHeight = postContentRef.current.clientHeight
-        setContentHeight(postContentHeight);
+        saveHeight(postContentHeight);
     });
 
     return (
@@ -32,7 +36,7 @@ const PostItem = ({
 
             <ContentWrapper
                 expanded={expanded}
-                height={contentHeight}
+                contentHeight={contentHeight}
             >
                 <PostContent ref={postContentRef}>
                     {expanded ? content : excerpt + '...'}

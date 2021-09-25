@@ -4,7 +4,7 @@ export const ModalOverlay = styled.div`
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 0;
+    top: ${props => props.top}px;
     background: rgba(0, 0, 0, 0.5);
 `
 

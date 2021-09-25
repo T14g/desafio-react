@@ -1,5 +1,5 @@
 import MainMenu from '../main-menu/main-menu.component';
-import { HeaderContainer, InnerContainer, LogoContainer, Logo } from './header.styles';
+import { HeaderContainer, InnerContainer, Logo } from './header.styles';
 
 const Header = ({ lights }) => {
     return (

@@ -7,9 +7,10 @@ import {
 } from './modal.styles';
 
 const Modal = ({ showModal, closeModal }) => {
+    const scrolled = window.scrollY;
 
     return showModal ? (
-        <ModalOverlay>
+        <ModalOverlay top={scrolled}>
             <ModalContainer>
                 <ModalTitle>Title</ModalTitle>
                 <ModalContent>

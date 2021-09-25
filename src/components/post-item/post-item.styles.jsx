@@ -56,7 +56,7 @@ export const PostTitle = styled.p`
 `
 
 export const ContentWrapper = styled.div`
-    height:  ${props => props.expanded ? props.height + 'px' : '70px'};
+    height:  ${props => props.expanded ? props.contentHeight + 'px' : '70px'};
     padding-bottom: 50px;
     transition: height 2s;
     overflow: hidden;
