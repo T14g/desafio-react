@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
-import { PostBox, PostTitle, PostContent, Button } from './post-item.styles';
+import React, { useState, useRef, useEffect } from 'react';
+import {
+    PostBox,
+    PostTitle,
+    ContentWrapper,
+    PostContent,
+    Button
+} from './post-item.styles';
 
 const PostItem = ({
     title,
@@ -10,15 +16,29 @@ const PostItem = ({
     expandable = false
 }) => {
 
+    const postContentRef = useRef(null);
     const [expanded, setExpanded] = useState(false);
+    const [contentHeight, setContentHeight] = useState(false);
     const excerpt = content.slice(0, 140);
 
+    useEffect(() => {
+        let postContentHeight = postContentRef.current.clientHeight
+        setContentHeight(postContentHeight);
+    });
+
     return (
-        <PostBox className={customClass}>
+        <PostBox className={customClass} >
             <PostTitle>{title}</PostTitle>
-            <PostContent>
-                {expanded ? content : excerpt + '...'}
-            </PostContent>
+
+            <ContentWrapper
+                expanded={expanded}
+                height={contentHeight}
+            >
+                <PostContent ref={postContentRef}>
+                    {expanded ? content : excerpt + '...'}
+                </PostContent>
+            </ContentWrapper>
+
             {
                 expandable ?
                     <Button onClick={() => setExpanded(!expanded)}>{buttonTitle}</Button>
