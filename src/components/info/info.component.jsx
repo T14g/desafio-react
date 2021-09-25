@@ -1,4 +1,3 @@
-import React from 'react';
 import { InfoContainer } from './info.styles';
 
 const Info = ({ children }) => {

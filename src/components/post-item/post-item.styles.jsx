@@ -6,7 +6,8 @@ export const PostBox = styled.div`
     background: #1E1E23;
     border-top: 50px solid;
     padding-bottom: 20px;
-    
+    height: fit-content;
+
     &.purple{
         border-color: #947DBB;
         
@@ -52,6 +53,13 @@ export const PostTitle = styled.p`
     padding: 0 15px;
     font-weight: 800;
     font-size: 25px;
+`
+
+export const ContentWrapper = styled.div`
+    height:  ${props => props.expanded ? props.height + 'px' : '70px'};
+    padding-bottom: 50px;
+    transition: height 2s;
+    overflow: hidden;
 `
 
 export const PostContent = styled.p`

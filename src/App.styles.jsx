@@ -8,10 +8,14 @@ export const Container = styled.div`
 
 export const MainTitle = styled.h1`
     max-width: 1200px;
-    text-align:center;
     margin: 50px auto;
+    text-align:center;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1;
+    color: #FFCB00;
 `
 
 export const Strong = styled.strong`
-
+    font-weight: 700;
 `

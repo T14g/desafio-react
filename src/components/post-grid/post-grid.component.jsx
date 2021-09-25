@@ -1,4 +1,3 @@
-import React from 'react';
 import PostItem from '../post-item/post-item.component';
 
 import { Row, Container } from './post-grid.styled';
@@ -31,8 +30,7 @@ const PostGrid = ({actions}) => {
                     unde mollitia reiciendis explicabo bla
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
-                    buttonTitle="Read more..."
-                    callToAction={() => console.log("hello2")}
+                    buttonTitle="Scroll down..."
                     customClass="blue"
                     expandable={true}
                 />
@@ -45,7 +43,7 @@ const PostGrid = ({actions}) => {
                     unde mollitia reiciendis explicabo bla
                     nditiis est ipsum nobis praesentium. 
                     Id iure et quo soluta. Minima?"
-                    buttonTitle="Abrir Modal"
+                    buttonTitle="Open Modal"
                     callToAction={showModal}
                     customClass="yellow"
                 />
