@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const PostBox = styled.div`
     max-width: 390px;
     float:left;
+    flex: 1 1 300px;
     background: #1E1E23;
     border-top: 50px solid;
     padding-bottom: 20px;
     height: fit-content;
+    margin-bottom: 30px;
 
     &.purple{
         border-color: #947DBB;
@@ -44,8 +46,8 @@ export const PostBox = styled.div`
         }
     }
 
-    &:not(:last-child){
-        margin-right: 15px;
+    &:not(:nth-child(3n)){
+        margin-right: 30px;
     }
 `
 
@@ -68,6 +70,7 @@ export const PostContent = styled.p`
 `
 
 export const Button = styled.button`
+    font-family: 'Open Sans', sans-serif;  
     float: right;
     margin-right: 15px;
     display: block;
@@ -76,4 +79,10 @@ export const Button = styled.button`
     border-radius: 5px;
     text-align: center;
     font-weight: 600;
+    font-style: italic;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
 `

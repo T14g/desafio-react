@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const fontFamily =  "'Open Sans', sans-serif";  
+
 export const ModalOverlay = styled.div`
     width: 100%;
     height: 100vh;
@@ -10,22 +12,52 @@ export const ModalOverlay = styled.div`
 
 export const ModalContainer = styled.div`
     max-width: 700px;
-    background: #ffff;
+    background: #1E1E23;
     margin: 0 auto;
     padding: 20px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    border-top: 50px solid #FFE659;
+
+    &::after{
+        display: table;
+        content: "";
+        clear: both;
+    }
 `
 
-export const ModalTitle = styled.div`
-
+export const ModalTitle = styled.h2`
+    font-size: 50px;
+    margin: 7px 0;
+    color: #f1f1f1;
+    font-family: ${fontFamily};
 `
 
 export const ModalContent = styled.div`
-
+    font-family: ${fontFamily};
+    font-size: 20px;
+    color: #f1f1f1;
+    font-height: 500;
 `
 
 export const Button = styled.button`
-
+    font-family: ${fontFamily};
+    float: right;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    max-width: 150px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    margin-top: 25px;
+    background: #FFE659;
+    border-radius: 5px;
+    border: none;
+    
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
 `

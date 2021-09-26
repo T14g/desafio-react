@@ -16,13 +16,13 @@ const App = () => {
     setShowModal(false)
   }
 
-  const openModal = () =>{
+  const openModal = (item) =>{
     document.querySelector('body').style.overflow = 'hidden';
-    setShowModal(!showModal);
+    setShowModal(item);
   }
 
   const actions = {
-    'show-modal': () => openModal(),
+    'show-modal': openModal,
     'turn-lights': () => setLights(!lights)
   };
 

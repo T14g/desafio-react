@@ -12,14 +12,8 @@ const Modal = ({ showModal, closeModal }) => {
     return showModal ? (
         <ModalOverlay top={scrolled}>
             <ModalContainer>
-                <ModalTitle>Title</ModalTitle>
-                <ModalContent>
-                    Lorem ipsum dolor sit amet c
-                    onsectetur adipisicing elit. Itaque dolorem hic
-                    aliquid accusamus commodi quae corporis vitae, providen
-                    t ut facere labore! Officia molestiae laudantium to
-                    tam eligendi distinctio dolorum atque laboriosam.
-                </ModalContent>
+                <ModalTitle>{showModal.title}</ModalTitle>
+                <ModalContent>{showModal.content}</ModalContent>
                 <Button onClick={closeModal}>Close</Button>
             </ModalContainer>
         </ModalOverlay>
