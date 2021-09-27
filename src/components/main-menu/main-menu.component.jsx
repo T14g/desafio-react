@@ -1,14 +1,14 @@
-import { MenuContainer, MenuItem } from './main-menu.styles';
+import { MenuContainer, MenuItem, StyledLink } from './main-menu.styles';
 
 const MainMenu = ({ lights }) => {
 
     return (
         <MenuContainer lights={lights}>
-            <MenuItem>HTML5</MenuItem>
-            <MenuItem>CSS3</MenuItem>
-            <MenuItem>JAVASCRIPT</MenuItem>
-            <MenuItem>REACT</MenuItem>
-            <MenuItem>NEXT.JS</MenuItem>
+            <MenuItem><StyledLink>HTML5</StyledLink></MenuItem>
+            <MenuItem><StyledLink>CSS3</StyledLink></MenuItem>
+            <MenuItem><StyledLink>JAVASCRIPT</StyledLink></MenuItem>
+            <MenuItem><StyledLink>REACT</StyledLink></MenuItem>
+            <MenuItem><StyledLink>NEXT.JS</StyledLink></MenuItem>
         </MenuContainer>
     );
 }

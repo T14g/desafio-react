@@ -1,6 +1,6 @@
 import PostItem from '../post-item/post-item.component';
 
-import { Row, Container } from './post-grid.styled';
+import { Container } from './post-grid.styled';
 
 const PostGrid = ({ actions }) => {
 
@@ -161,20 +161,19 @@ const PostGrid = ({ actions }) => {
 
     return (
         <Container>
-            <Row>
-                {
-                    posts.map((post) =>
-                        <PostItem
-                            title={post.title}
-                            content={post.content}
-                            buttonTitle={post.button}
-                            customClass={post.class}
-                            callToAction={() => post.fn(post)}
-                            expandable={post.expandable}
-                        />
-                    )
-                }
-            </Row>
+            {
+                posts.map((post, index) =>
+                    <PostItem
+                        key={index}
+                        title={post.title}
+                        content={post.content}
+                        buttonTitle={post.button}
+                        customClass={post.class}
+                        callToAction={() => post.fn(post)}
+                        expandable={post.expandable}
+                    />
+                )
+            }
         </Container>
     );
 }

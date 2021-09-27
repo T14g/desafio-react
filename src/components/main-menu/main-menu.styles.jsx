@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Link = ({ className, href, children }) => (
+    <a className={className} href={href}>
+        {children}
+    </a>
+)
+
 export const MenuContainer = styled.ul`
     color: ${props => props.lights ? '#000' : '#fff'}
     list-style: none;
@@ -14,4 +20,8 @@ export const MenuItem = styled.li`
         font-weight: 600;
     }
 `
- 
+export const StyledLink = styled(Link)`
+    &:hover{
+        cursor: pointer;
+    }
+`
