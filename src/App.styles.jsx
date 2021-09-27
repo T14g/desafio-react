@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     font-family: 'Open Sans', sans-serif;       
-    background: ${props => props.lights ? '#fff' : '#141418'};
+    background: ${props => props.theme.body};
     color: ${props => props.lights ? '#000' : '#fff'};
 `
 
@@ -13,7 +13,7 @@ export const MainTitle = styled.h1`
     font-weight: 300;
     font-size: 55px;
     line-height: 1;
-    color: #FFCB00;
+    color: ${props => props.theme.h1};
 `
 
 export const Strong = styled.strong`

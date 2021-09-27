@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './components/Themes';
 import { MainTitle, Strong, Container } from './App.styles';
 import Header from './components/header/header.component';
 import Info from './components/info/info.component';
@@ -16,7 +18,7 @@ const App = () => {
     setShowModal(false)
   }
 
-  const openModal = (item) =>{
+  const openModal = (item) => {
     document.querySelector('body').style.overflow = 'hidden';
     setShowModal(item);
   }
@@ -27,10 +29,10 @@ const App = () => {
   };
 
   return (
-    <React.Fragment>
-      <Container lights={lights}>
+    <ThemeProvider theme={lights ? lightTheme : darkTheme}>
+      <Container>
 
-        <Header lights={lights} />
+        <Header />
 
         <MainTitle>
           Criei este site <Strong>responsivo</Strong> com
@@ -43,9 +45,11 @@ const App = () => {
         <PostGrid actions={actions} />
 
         <Footer />
+
       </Container>
       <Modal showModal={showModal} closeModal={closeModal} />
-    </React.Fragment>
+    </ThemeProvider>
+
   );
 }
 

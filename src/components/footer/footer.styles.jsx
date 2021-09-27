@@ -10,7 +10,7 @@ export const StyledLink = styled(Link)`
 `
 
 export const FooterContainer = styled.footer`
-    background: #0E0E12;
+    background: ${props => props.theme.footer};
 `
 
 export const InnerContainer = styled.div`

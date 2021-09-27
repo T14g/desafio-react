@@ -26,8 +26,8 @@ const Footer = () => {
                 <SocialIcons>
                     {
                         socialIcons.map((icon, index) =>
-                            <StyledLink href="#">
-                                <Icon key={index} src={icon.src} />
+                            <StyledLink href="#" key={index}>
+                                <Icon src={icon.src} />
                             </StyledLink>
                         )
                     }

@@ -12,7 +12,7 @@ export const ModalOverlay = styled.div`
 
 export const ModalContainer = styled.div`
     max-width: 700px;
-    background: #1E1E23;
+    background: ${props => props.theme.modalBg};
     margin: 0 auto;
     padding: 20px;
     position: relative;
@@ -30,14 +30,14 @@ export const ModalContainer = styled.div`
 export const ModalTitle = styled.h2`
     font-size: 50px;
     margin: 7px 0;
-    color: #f1f1f1;
+    color: ${props => props.theme.modalText};
     font-family: ${fontFamily};
 `
 
 export const ModalContent = styled.div`
     font-family: ${fontFamily};
     font-size: 20px;
-    color: #f1f1f1;
+    color: ${props => props.theme.modalText};
     font-height: 500;
 `
 

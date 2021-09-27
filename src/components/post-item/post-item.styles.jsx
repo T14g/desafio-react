@@ -4,7 +4,7 @@ export const PostBox = styled.div`
     max-width: 390px;
     float:left;
     flex: 1 1 300px;
-    background: #1E1E23;
+    background: ${props => props.theme.postBlock};
     border-top: 50px solid;
     padding-bottom: 20px;
     height: fit-content;
@@ -17,7 +17,7 @@ export const PostBox = styled.div`
             background-color: #947DBB; 
         }
 
-        p:first-child{
+        > p:first-child{
             color: #947DBB;
         }
     }
@@ -29,7 +29,7 @@ export const PostBox = styled.div`
             background-color: #24BADC; 
         }
 
-        p:first-child{
+        > p:first-child{
             color: #24BADC;
         }
     }
@@ -41,7 +41,7 @@ export const PostBox = styled.div`
             background-color: #FFE659; 
         }
 
-        p:first-child{
+        > p:first-child{
             color: #FFE659;
         }
     }
@@ -65,7 +65,7 @@ export const ContentWrapper = styled.div`
 `
 
 export const PostContent = styled.p`
-    color: #fff;
+    color: ${props => props.theme.postText};
     padding: 0 15px;
 `
 
