@@ -46,9 +46,18 @@ export const PostBox = styled.div`
         }
     }
 
-    &:not(:nth-child(3n)){
-        margin-right: 30px;
+    @media(min-width: 990px){
+        &:not(:nth-child(3n)){
+            margin-right: 30px;
+        }
     }
+
+    @media(max-width: 989px){
+        &:not(:nth-child(2n)){
+            margin-right: 30px;
+        }
+    }
+    
 `
 
 export const PostTitle = styled.p`

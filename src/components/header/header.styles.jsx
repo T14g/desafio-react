@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
 export const InnerContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 
     &::after{
         display: table:

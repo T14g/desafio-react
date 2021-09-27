@@ -1,18 +1,26 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-    max-width: 952px;
+    max-width: 880px;
     text-align:center;
     margin: 0 auto 20px;
     background: ${props => props.theme.infoBlock};
     padding: 15px;
     font-size: 20px;
     text-align: left;
+    padding-left: 60px;
+    position: relative;
 
     svg{
         margin-right: 10px;
-        position: relative;
-        top: 4px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+    }
+
+    @media(max-width: 989px){
+        max-width: 580px;
+        font-size: 18px;
     }
 `
 export const SVG = (() => (

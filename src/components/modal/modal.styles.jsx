@@ -25,6 +25,18 @@ export const ModalContainer = styled.div`
         content: "";
         clear: both;
     }
+
+    @media(max-width: 989px){
+        max-width: 620px;
+    }
+
+    @media(max-width: 676px){
+        max-width: 400px;
+    }
+
+    @media(max-width: 450px){
+        max-width: 265px;
+    }
 `
 
 export const ModalTitle = styled.h2`
@@ -32,6 +44,14 @@ export const ModalTitle = styled.h2`
     margin: 7px 0;
     color: ${props => props.theme.modalText};
     font-family: ${fontFamily};
+
+    @media(max-width: 676px){
+        font-size: 35px;
+    }
+
+    @media(max-width: 450px){
+        font-size: 25px;
+    }
 `
 
 export const ModalContent = styled.div`
@@ -39,6 +59,14 @@ export const ModalContent = styled.div`
     font-size: 20px;
     color: ${props => props.theme.modalText};
     font-height: 500;
+
+    @media(max-width: 676px){
+        font-size: 18px;
+    }
+
+    @media(max-width: 450px){
+        font-size: 16px;
+    }
 `
 
 export const Button = styled.button`
@@ -59,5 +87,13 @@ export const Button = styled.button`
     &:hover{
         cursor: pointer;
         opacity: 0.8;
+    }
+
+    @media(max-width: 676px){
+        font-size: 25px;
+    }
+
+    @media(max-width: 450px){
+        font-size: 20px;
     }
 `
