@@ -1,9 +1,9 @@
 import { MenuContainer, MenuItem, StyledLink } from './main-menu.styles';
 
-const MainMenu = ({ lights }) => {
+const MainMenu = ({ customClass }) => {
 
     return (
-        <MenuContainer lights={lights}>
+        <MenuContainer className={customClass}>
             <MenuItem><StyledLink>HTML5</StyledLink></MenuItem>
             <MenuItem><StyledLink>CSS3</StyledLink></MenuItem>
             <MenuItem><StyledLink>JAVASCRIPT</StyledLink></MenuItem>

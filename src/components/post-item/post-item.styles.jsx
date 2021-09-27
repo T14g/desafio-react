@@ -57,6 +57,19 @@ export const PostBox = styled.div`
             margin-right: 30px;
         }
     }
+
+    @media(max-width: 659px){
+
+        &:not(:nth-child(2n)){
+            margin-right: 0;
+        }
+
+        flex: initial;
+        margin: 0 auto 20px;
+        float: none;
+        width: 100%;
+        max-width: initial;
+    }
     
 `
 

@@ -22,6 +22,10 @@ export const InfoContainer = styled.div`
         max-width: 580px;
         font-size: 18px;
     }
+
+    @media(max-width: 450px){
+        font-size: 16px;
+    }
 `
 export const SVG = (() => (
     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"

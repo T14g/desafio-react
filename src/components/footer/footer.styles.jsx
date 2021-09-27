@@ -23,10 +23,22 @@ export const InnerContainer = styled.div`
         content: "";
         clear: both;
     }
+
+    @media(max-width: 728px){
+        display:flex;
+        flex-flow: column;
+        padding-bottom: 20px;
+    }
 `
 
 export const CopyRights = styled.div`
     float: left;
+
+    @media(max-width: 728px){
+        float: none;
+        order: 2;
+        text-align: center;
+    }
 `
 
 export const SocialIcons = styled.div`
@@ -34,6 +46,14 @@ export const SocialIcons = styled.div`
     position: relative;
     top: -11px;
     right: -10px;
+
+    @media(max-width: 728px){
+        top: initial;
+        right: initial;
+        float: none;
+        order: 1;
+        margin: 0 auto;
+    }
 `
 
 export const Icon = styled.img`

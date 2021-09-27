@@ -20,3 +20,33 @@ export const Logo = styled.img`
     max-width: 150px;
     margin-top: 15px;
 `
+
+export const Hamburguer = styled.button`
+    display: none;
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: 35px;
+    float: right;
+    background: none;
+    border: 2px #fff solid;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @media(max-width: 676px){
+        display: block;
+    }
+`
+
+export const LineSpan = styled.span`
+    height: 4px;
+    width: 24px;
+    background: #fff;
+    display: block;
+    
+    &:not(:last-child){
+        margin-bottom: 5px;
+    }
+`

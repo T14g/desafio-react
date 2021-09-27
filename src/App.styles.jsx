@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    font-family: 'Open Sans', sans-serif;
-    padding: 0 15px;       
+    font-family: 'Open Sans', sans-serif;      
     background: ${props => props.theme.body};
     color: ${props => props.lights ? '#000' : '#fff'};
+`
+
+export const Wrapper = styled.div`
+    padding: 0 15px;
 `
 
 export const MainTitle = styled.h1`
@@ -19,6 +22,12 @@ export const MainTitle = styled.h1`
     @media(max-width: 989px){
         max-width: 606px;
         font-size: 35px;
+    }
+
+    @media(max-width: 659px){
+        max-width: 300px;
+        font-size: 24px;
+        margin: 80px auto;
     }
 `
 

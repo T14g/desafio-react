@@ -7,9 +7,17 @@ const Link = ({ className, href, children }) => (
 )
 
 export const MenuContainer = styled.ul`
-    color: ${props => props.lights ? '#000' : '#fff'}
+    color: #f1f1f1;
     list-style: none;
     float:right;
+
+    @media(max-width: 676px){
+        display: none;
+    }
+
+    &.sidebar-menu{
+        display: block;
+    }
 `
 
 export const MenuItem = styled.li`
