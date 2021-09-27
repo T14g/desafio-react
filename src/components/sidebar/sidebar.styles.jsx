@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 15px;
     width: 40px;
     height: 35px;

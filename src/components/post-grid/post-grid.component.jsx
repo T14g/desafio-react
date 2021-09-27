@@ -58,7 +58,7 @@ const PostGrid = ({ actions }) => {
             expandable: false
         },
         {
-            title: "Post com turn lights",
+            title: "Post com Alterar tema",
             content: `Lorem ipsum dolor, sit amet 
             consectetur adipisicing elit. Ad molestiae, 
             hic, quaerat dolor voluptatum aliquam
@@ -77,13 +77,13 @@ const PostGrid = ({ actions }) => {
             unde mollitia reiciendis explicabo bla
             nditiis est ipsum nobis praesentium. 
             Id iure et quo soluta. Minima?`,
-            button: 'Turn Lights...',
+            button: 'Alterar tema...',
             class: 'purple',
             fn: turnLights,
             expandable: false
         },
         {
-            title: "Post com turn lights",
+            title: "Post com Alterar tema",
             content: `Lorem ipsum dolor, sit amet 
             consectetur adipisicing elit. Ad molestiae, 
             hic, quaerat dolor voluptatum aliquam
@@ -102,7 +102,7 @@ const PostGrid = ({ actions }) => {
             unde mollitia reiciendis explicabo bla
             nditiis est ipsum nobis praesentium. 
             Id iure et quo soluta. Minima?`,
-            button: 'Turn Lights...',
+            button: 'Alterar tema...',
             class: 'purple',
             fn: turnLights,
             expandable: false
