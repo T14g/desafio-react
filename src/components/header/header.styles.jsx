@@ -19,6 +19,11 @@ export const InnerContainer = styled.div`
 export const Logo = styled.img`
     max-width: 150px;
     margin-top: 15px;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
 `
 
 export const Hamburguer = styled.button`

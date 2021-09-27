@@ -57,4 +57,7 @@ export const SocialIcons = styled.div`
 `
 
 export const Icon = styled.img`
+    &:hover{
+        opacity: 0.8;
+    }
 `

@@ -31,5 +31,6 @@ export const MenuItem = styled.li`
 export const StyledLink = styled(Link)`
     &:hover{
         cursor: pointer;
+        opacity: 0.8;
     }
 `
