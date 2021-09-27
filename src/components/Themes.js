@@ -7,7 +7,9 @@ export const lightTheme = {
     postBlock : '#bdbdbd',
     postText : '#1E1E23',
     modalBg : '#bdbdbd',
-    modalText : '1E1E23'
+    modalText : '#1E1E23',
+    sidebar: '#bdbdbd',
+    sidebarText : '#f1f1f1'
 }
 
 export const darkTheme = {
@@ -19,5 +21,7 @@ export const darkTheme = {
     postBlock : '#1E1E23',
     postText : '#f1f1f1',
     modalBg : '#1E1E23',
-    modalText: '#f1f1f1'
+    modalText: '#f1f1f1',
+    sidebar: '#1E1E23',
+    sidebarText : '#f1f1f1'
 };

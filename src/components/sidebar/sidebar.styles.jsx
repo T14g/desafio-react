@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     position: absolute;
     top: 0;
-    background: #0E0E12;
+    background: ${props => props.theme.sidebar};
     width: 100%;
     height: 100vh;
     
@@ -16,7 +16,8 @@ export const Container = styled.div`
         li{
             display: block;
             font-size: 20px;
-            font-family: 'Open Sans', sans-serif; 
+            font-family: 'Open Sans', sans-serif;
+            color: ${props => props.theme.sidebarText};
         }
     }
 `
@@ -28,7 +29,7 @@ export const Button = styled.button`
     width: 40px;
     height: 35px;
     background: none;
-    border: 2px #fff solid;
-    color: #fff; 
-    font-size: 20px;;
+    border: 2px ${props => props.theme.sidebarText} solid;
+    color: ${props => props.theme.sidebarText}; 
+    font-size: 20px;
 `
