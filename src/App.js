@@ -8,6 +8,7 @@ import PostGrid from './components/post-grid/post-grid.component';
 import Footer from './components/footer/footer.component';
 import Modal from './components/modal/modal.component';
 import Sidebar from './components/sidebar/sidebar.component';
+import ExpandableItem from './components/expandable-item/expandable-item.component';
 
 const App = () => {
 
@@ -55,8 +56,10 @@ const App = () => {
           <Info>Este é um componente de informação, incluindo ícone em SVG, feito com Styled-components</Info>
           <Info>Este é outro componente de informação, incluindo ícone em SVG, também foi feito com Styled</Info>
         </Wrapper>
-        
+
         <PostGrid actions={actions} />
+        
+        <ExpandableItem />
 
         <Footer />
 
