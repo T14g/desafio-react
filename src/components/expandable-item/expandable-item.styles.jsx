@@ -26,6 +26,10 @@ export const ExpandableItemContent = styled.div`
     transition: 1s;
     background: #1E1E23;
 
+    p{
+        padding: 15px;
+    }
+
     &.expanded{
         height: 120px;
     }

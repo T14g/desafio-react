@@ -17,7 +17,9 @@ const ExpandableItem = () => {
             </ExpandableItemHeader>
 
             <ExpandableItemContent className={expanded && 'expanded'}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore dolorum temporibus tenetur adipisci blanditiis rerum obcaecati hic corrupti nihil, quis deleniti nostrum ea esse, quibusdam mollitia? Voluptate, fugiat consectetur.
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore dolorum temporibus tenetur adipisci blanditiis rerum obcaecati hic corrupti nihil, quis deleniti nostrum ea esse, quibusdam mollitia? Voluptate, fugiat consectetur.
+                </p>
             </ExpandableItemContent>
         </ExpandableStyles>
 
